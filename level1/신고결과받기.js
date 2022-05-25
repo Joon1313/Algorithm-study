@@ -1,10 +1,10 @@
-const id_list = ["muzi", "frodo", "apeach", "neo"];
+const id_list = ['muzi', 'frodo', 'apeach', 'neo'];
 const report = [
-  "muzi frodo",
-  "apeach frodo",
-  "frodo neo",
-  "muzi neo",
-  "apeach muzi",
+  'muzi frodo',
+  'apeach frodo',
+  'frodo neo',
+  'muzi neo',
+  'apeach muzi',
 ];
 const k = 2;
 
@@ -20,7 +20,7 @@ function solution(id_list, report, k) {
   report.forEach((v) => {
     if (!중복체크.includes(v)) {
       중복체크.push(v);
-      const [userId, reportId] = v.split(" ");
+      const [userId, reportId] = v.split(' ');
       if (report_list[reportId]) {
         report_list[reportId].push(userId);
       } else {
